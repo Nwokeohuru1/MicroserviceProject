@@ -46,7 +46,7 @@ namespace CustomerApi.Controllers
         [Route("UpdateCustomer")]
         public async Task<IActionResult> UpdateCustomer(Customer customer)
         {
-
+           
             await _customerSerices.UpdateCustomer(customer);
 
             return Ok("Done");
